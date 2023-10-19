@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xSsnadbMCTWUtnaZGQI4olHM/7wxsnL0dr6d+C6ApsYv9oEUZnho13mTz47n4TiH/TM1jb+BWJ1sXohZ1aixOQ==",
+  "dgSpecHash": "yNn56G7nWnlb9mkd7I0dIp0Rtsz4/wCcYfN2omj5gT6OnWSxS+WmT8S6pnkQy0hkJLJjueyatU8st0QKZuzucQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kaspa\\OneDrive\\Desktop\\ShopTARge22\\ShopTARge22\\RealEstateTest\\ShopTARge22.SpaceshipTest.csproj",
   "expectedPackageFiles": [
@@ -119,6 +119,8 @@
     "C:\\Users\\kaspa\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\kaspa\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\kaspa\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\kaspa\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\kaspa\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512",
     "C:\\Users\\kaspa\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\kaspa\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\kaspa\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",

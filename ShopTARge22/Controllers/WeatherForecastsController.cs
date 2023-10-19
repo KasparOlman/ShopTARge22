@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopTARge22.Core.ServiceInterface;
+using ShopTARge22.Models.Forecast;
 
 namespace ShopTARge22.Controllers
 {
@@ -14,9 +15,29 @@ namespace ShopTARge22.Controllers
         }   
 
         [HttpGet] 
-        public IActionResult Index()
+        public IActionResult SearchCity()
         {
-            SearchCity model = new();
+            SearchCityViewModel model = new();
+
+
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult SearchCity(SearchCityViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("City", "WeatherForecast", new { city = model.CityName });
+            }
+
+            return View(model);
+        }
+
+        public IActionResult City(string city)
+        {
+            
+
+
             return View();
         }
     }
