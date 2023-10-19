@@ -1,5 +1,4 @@
-﻿using ShopTARge22.ApplicationServices.Services;
-using ShopTARge22.Core.Domain;
+﻿using ShopTARge22.Core.Domain;
 using ShopTARge22.Core.Dto;
 using ShopTARge22.Core.ServiceInterface;
 using System;
@@ -22,7 +21,7 @@ namespace ShopTARge22.RealEstateTest
             realEstate.SizeSqrt = 1024;
             realEstate.RoomCount = 5;
             realEstate.Floor = 3;
-            realEstate.BuildingType = "asda";
+            realEstate.BuildingType = "asd";
             realEstate.BuiltInYear = DateTime.Now;
             realEstate.CreatedAt = DateTime.Now;
             realEstate.UpdatedAt = DateTime.Now;
@@ -38,112 +37,68 @@ namespace ShopTARge22.RealEstateTest
         public async Task ShouldNot_GetByIdRealEstate_WhenReturnsNotEqual()
         {
             //Arrange
-            // kusime realestete, mida meil ei ole olemas
-            RealEstateDto realEstate = new();
-
             Guid wrongGuid = Guid.Parse(Guid.NewGuid().ToString());
-            Guid guid = Guid.Parse("1e9606e8-6846-4105-8e74-f9e5fb7f8b09");
+            Guid guid = Guid.Parse("173d934d-6446-4a36-a200-515ea63d1795");
 
             //Act
-            //peame kutsuma esile meetodi, mis on realEstateService classi
             await Svc<IRealEstatesServices>().DetailsAsync(guid);
 
-
             //Assert
-            //assertimise vordlus, et vorrelda kahte guidi
             Assert.NotEqual(wrongGuid, guid);
-
         }
 
-        [Fact]
-        public async Task ShouldNot_GetByIdRealEstate_WhenReturnsNotEqualWithCreate()
-        {
-            //Arrange
-            // kusime realestete, mida meil ei ole olemas
-            RealEstateDto realEstate = new();
-            Guid guid = Guid.Parse("2e8606e8-6846-4105-8e74-f9e5fb7f8b09");
-            realEstate.Address = "asd";
-            realEstate.SizeSqrt = 1024;
-            realEstate.RoomCount = 5;
-            realEstate.Floor = 3;
-            realEstate.BuildingType = "asda";
-            realEstate.BuiltInYear = DateTime.Now;
-            realEstate.CreatedAt = DateTime.Now;
-            realEstate.UpdatedAt = DateTime.Now;
-
-            //Act
-            //peame kutsuma esile meetodi, mis on realEstateService classi
-            var result = await Svc<IRealEstatesServices>().Create(realEstate);
-
-            //await Svc<IRealEstatesServices>().DetailsAsync(guid);
-
-
-            //Assert
-            //assertimise vordlus, et vorrelda kahte guidi
-            Assert.NotEqual(result.Id, guid);
-        }
         [Fact]
         public async Task Should_GetByIdRealEstate_WhenReturnsEqual()
         {
-            Guid databaseguid = Guid.Parse("2e8606e8-6846-4105-8e74-f9e5fb7f8b09");
-            Guid guid = Guid.Parse("2e8606e8-6846-4105-8e74-f9e5fb7f8b09");
+            Guid databaseGuid = Guid.Parse("173d934d-6446-4a36-a200-515ea63d1795");
+            Guid guid = Guid.Parse("173d934d-6446-4a36-a200-515ea63d1795");
 
-
-
-            //Act
-            //peame kutsuma esile meetodi, mis on realEstateService classi
             await Svc<IRealEstatesServices>().DetailsAsync(guid);
 
-
-            //Assert
-            //assertimise vordlus, et vorrelda kahte guidi
-            Assert.Equal(databaseguid, guid);
+            Assert.Equal(databaseGuid, guid);
         }
 
         [Fact]
-
         public async Task Should_DeleteByIdRealEstate_WhenDeleteRealEstate()
         {
-            RealEstateDto RealEstate = MockRealEstateData();
 
-            var addRealEstate = await Svc<IRealEstatesServices>().Create(RealEstate);
+            RealEstateDto realEstate = MockRealEstateData();
+
+
+            var addRealEstate = await Svc<IRealEstatesServices>().Create(realEstate);
             var result = await Svc<IRealEstatesServices>().Delete((Guid)addRealEstate.Id);
 
-            Assert.Equal(addRealEstate, result);
-
+            Assert.Equal(result, addRealEstate);
         }
 
         [Fact]
         public async Task ShouldNot_DeleteByIdRealEstate_WhenDidNotDeleteRealEstate()
         {
-            RealEstateDto RealEstate = MockRealEstateData();
+            RealEstateDto realEstate = MockRealEstateData();
 
-            var RealEstate1 = await Svc<IRealEstatesServices>().Create(RealEstate);
-            var RealEstate2 = await Svc<IRealEstatesServices>().Create(RealEstate);
+            var realEstate1 = await Svc<IRealEstatesServices>().Create(realEstate);
+            var realEstate2 = await Svc<IRealEstatesServices>().Create(realEstate);
 
-            var result = await Svc < IRealEstatesServices >(). Delete((Guid)RealEstate2.Id);
+            var result = await Svc<IRealEstatesServices>().Delete((Guid)realEstate2.Id);
 
-            Assert.NotEqual(result.Id, RealEstate1.Id);
-
+            Assert.NotEqual(result.Id, realEstate1.Id);
         }
 
         [Fact]
-        public async Task Should_UpdateRealEstate_WhenUpdateDara()
+        public async Task Should_UpdateRealEstate_WhenUpdateData()
         {
-            // vaja luua guid, mida hakkame kasutama update puhul
+            var guid = new Guid("173d934d-6446-4a36-a200-515ea63d1795");
 
-            var guid = new Guid("2e8606e8-6846-4105-8e74-f9e5fb7f8b09");
             RealEstateDto dto = MockRealEstateData();
 
-
-            // vaja saada domainist andmed katte
             RealEstate realEstate = new();
-            realEstate.Id = Guid.Parse("2e8606e8-6846-4105-8e74-f9e5fb7f8b09");
-            realEstate.Address = "Aadresslll";
-            realEstate.SizeSqrt = 568;
+
+            realEstate.Id = Guid.Parse("173d934d-6446-4a36-a200-515ea63d1795");
+            realEstate.Address = "Address123";
+            realEstate.SizeSqrt = 890;
             realEstate.RoomCount = 9;
-            realEstate.Floor = 9;
-            realEstate.BuildingType = "dnfo";
+            realEstate.Floor = 4;
+            realEstate.BuildingType = "qwerty";
             realEstate.BuiltInYear = DateTime.Now.AddYears(1);
 
             await Svc<IRealEstatesServices>().Update(dto);
@@ -152,16 +107,10 @@ namespace ShopTARge22.RealEstateTest
             Assert.DoesNotMatch(realEstate.Address, dto.Address);
             Assert.DoesNotMatch(realEstate.Floor.ToString(), dto.Floor.ToString());
             Assert.NotEqual(realEstate.RoomCount, dto.RoomCount);
-
-
-
-
-            //kasutan domain andmed
         }
+
         [Fact]
-
         public async Task Should_UpdateRealEstate_WhenUpdateDataVersion2()
-
         {
             RealEstateDto dto = MockRealEstateData();
             var createRealEstate = await Svc<IRealEstatesServices>().Create(dto);
@@ -171,22 +120,41 @@ namespace ShopTARge22.RealEstateTest
 
             Assert.DoesNotMatch(result.Address, createRealEstate.Address);
             Assert.NotEqual(result.UpdatedAt, createRealEstate.UpdatedAt);
-            //Assert.Equal(result.CreatedAt, createRealEstate.CreatedAt);
+        }
+
+        [Fact]
+        public async Task ShouldNot_UpdateRealEstate_WhenNotUpdateData()
+        {
+            RealEstateDto dto = MockRealEstateData();
+            var createRealestate = await Svc<IRealEstatesServices>().Create(dto);
+
+            RealEstateDto nullUpdate = MockNullRealEstate();
+            var result = await Svc<IRealEstatesServices>().Update(nullUpdate);
+
+            var nullId = nullUpdate.Id;
+
+            Assert.True(dto.Id == nullId);
+        }
+
+        private RealEstateDto MockNullRealEstate()
+        {
+            throw new NotImplementedException();
         }
 
         private RealEstateDto MockRealEstateData()
         {
             RealEstateDto realEstate = new()
             {
-                Address = "qwe",
-                SizeSqrt = 134,
+                Address = "asd",
+                SizeSqrt = 123,
                 RoomCount = 5,
-                Floor = 6,
-                BuildingType = "asda",
+                Floor = 3,
+                BuildingType = "asd",
                 BuiltInYear = DateTime.Now,
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
-        };
+            };
+
             return realEstate;
         }
 
@@ -194,17 +162,17 @@ namespace ShopTARge22.RealEstateTest
         {
             RealEstateDto realEstate = new()
             {
-                Address = "qwe",
-                SizeSqrt = 134123,
-                RoomCount = 54,
-                Floor = 63,
-                BuildingType = "asda",
+                Address = "asdasd",
+                SizeSqrt = 123123,
+                RoomCount = 55,
+                Floor = 33,
+                BuildingType = "asd",
                 BuiltInYear = DateTime.Now.AddYears(1),
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now.AddYears(1),
             };
+
             return realEstate;
         }
-
     }
 }
