@@ -8,9 +8,10 @@ namespace ShopTARge22.ApplicationServices.Services
     {
         WeatherResponceRootDto IWeatherForecastServices.GetForecast(string city)
         {
+            string IdOpenWeather = "e647c34e4d90740d22ee2a55ba0f33e2";
+            string url = $"https://api.openweathermap.org/data/2.5/weather?q={city},&appid={IdOpenWeather}"; 
 
+            return null;
         }
-       
-
     }
 }
