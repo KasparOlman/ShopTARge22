@@ -77,3 +77,7 @@ C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\obj\Debug\ne
 C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\obj\Debug\net6.0\ShopTARge22.pdb
 C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\obj\Debug\net6.0\ShopTARge22.genruntimeconfig.cache
 C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\obj\Debug\net6.0\ref\ShopTARge22.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
