@@ -11,15 +11,19 @@ namespace ShopTARge22.ApplicationServices.Services
     {
         private readonly ShopTARge22Context _context;
 
+        public DbContext DbContext { get; }
+
         public KindergartenServices 
             (ShopTARge22Context context)
         {
             _context = context;
         }
 
+
         public async Task<Kindergarten> Create(KindergartenDto dto)
         {
-            Kindergarten kindergarten = new Kindergarten();
+            Kindergarten kindergarten = new();
+
             kindergarten.Id = Guid.NewGuid();
             kindergarten.GroupName = dto.GroupName;
             kindergarten.ChildrenCount = dto.ChildrenCount;
@@ -68,6 +72,7 @@ namespace ShopTARge22.ApplicationServices.Services
             await _context.SaveChangesAsync();
             return kindergartenId;
         }
+
 
     }
 }

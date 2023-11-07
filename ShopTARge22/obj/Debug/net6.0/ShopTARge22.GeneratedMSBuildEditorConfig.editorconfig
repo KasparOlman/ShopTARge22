@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\ShopTARge22
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/kaspa/OneDrive/Desktop/ShopTARge22/ShopTARge22/ShopTARge22/Views/ChuckNorris/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1Y2tOb3JyaXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kaspa/OneDrive/Desktop/ShopTARge22/ShopTARge22/ShopTARge22/Views/ChuckNorris/Jokes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1Y2tOb3JyaXNcSm9rZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kaspa/OneDrive/Desktop/ShopTARge22/ShopTARge22/ShopTARge22/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -88,8 +96,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhY2VTaGlwc1xfSW1hZ2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kaspa/OneDrive/Desktop/ShopTARge22/ShopTARge22/ShopTARge22/Views/WeatherForecasts/WeatherForecast.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0c1xXZWF0aGVyRm9yZWNhc3QuY3NodG1s
+[C:/Users/kaspa/OneDrive/Desktop/ShopTARge22/ShopTARge22/ShopTARge22/Views/WeatherForecasts/City.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0c1xDaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kaspa/OneDrive/Desktop/ShopTARge22/ShopTARge22/ShopTARge22/Views/WeatherForecasts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kaspa/OneDrive/Desktop/ShopTARge22/ShopTARge22/ShopTARge22/Views/_ViewImports.cshtml]

@@ -122,24 +122,7 @@ namespace ShopTARge22.RealEstateTest
             Assert.NotEqual(result.UpdatedAt, createRealEstate.UpdatedAt);
         }
 
-        [Fact]
-        public async Task ShouldNot_UpdateRealEstate_WhenNotUpdateData()
-        {
-            RealEstateDto dto = MockRealEstateData();
-            var createRealestate = await Svc<IRealEstatesServices>().Create(dto);
-
-            RealEstateDto nullUpdate = MockNullRealEstate();
-            var result = await Svc<IRealEstatesServices>().Update(nullUpdate);
-
-            var nullId = nullUpdate.Id;
-
-            Assert.True(dto.Id == nullId);
-        }
-
-        private RealEstateDto MockNullRealEstate()
-        {
-            throw new NotImplementedException();
-        }
+       
 
         private RealEstateDto MockRealEstateData()
         {

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopTARge22.ApplicationServ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopTARge22.RealEstateTest", "ShopTARge22.RealEstateTest\ShopTARge22.RealEstateTest.csproj", "{5EAE3443-12FA-42BF-B657-5F5700673BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopTARge22.SpaceshipTest", "RealEstateTest\ShopTARge22.SpaceshipTest.csproj", "{7D09F5B9-C697-44BD-B5E8-791A89DED234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopTARge22.SpaceshipTest", "RealEstateTest\ShopTARge22.SpaceshipTest.csproj", "{7D09F5B9-C697-44BD-B5E8-791A89DED234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopTARge22.KindergartenTest", "ShopTARge22.KindergartenTest\ShopTARge22.KindergartenTest.csproj", "{12F1CBB3-AC28-485E-B61B-E83033CA5A45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{7D09F5B9-C697-44BD-B5E8-791A89DED234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D09F5B9-C697-44BD-B5E8-791A89DED234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D09F5B9-C697-44BD-B5E8-791A89DED234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F1CBB3-AC28-485E-B61B-E83033CA5A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F1CBB3-AC28-485E-B61B-E83033CA5A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F1CBB3-AC28-485E-B61B-E83033CA5A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F1CBB3-AC28-485E-B61B-E83033CA5A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

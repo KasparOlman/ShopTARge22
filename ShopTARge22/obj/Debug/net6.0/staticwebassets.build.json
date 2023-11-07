@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "heGc0t9mnKUZCAm9/5T/zCGxc5RrpwfZnebWK9n+/Yw=",
+  "Hash": "RBgbEiDImObqeCaicjsbpOrixfjABLmhc2dhQqw3d3M=",
   "Source": "ShopTARge22",
   "BasePath": "_content/ShopTARge22",
   "Mode": "Default",
@@ -848,6 +848,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\kaspa\\OneDrive\\Desktop\\ShopTARge22\\ShopTARge22\\ShopTARge22\\wwwroot\\lib\\bootstrap\\dist\\js\\main.jsx",
+      "SourceId": "ShopTARge22",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kaspa\\OneDrive\\Desktop\\ShopTARge22\\ShopTARge22\\ShopTARge22\\wwwroot\\",
+      "BasePath": "_content/ShopTARge22",
+      "RelativePath": "lib/bootstrap/dist/js/main.jsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\main.jsx"
     },
     {
       "Identity": "C:\\Users\\kaspa\\OneDrive\\Desktop\\ShopTARge22\\ShopTARge22\\ShopTARge22\\wwwroot\\lib\\bootstrap\\LICENSE",

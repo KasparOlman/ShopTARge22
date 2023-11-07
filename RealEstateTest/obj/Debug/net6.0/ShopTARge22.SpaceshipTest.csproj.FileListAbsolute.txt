@@ -154,3 +154,10 @@ C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\obj\Debug
 C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\obj\Debug\net6.0\ShopTARge22.SpaceshipTest.pdb
 C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\obj\Debug\net6.0\ShopTARge22.SpaceshipTest.genruntimeconfig.cache
 C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\obj\Debug\net6.0\ref\ShopTARge22.SpaceshipTest.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\bin\Debug\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\bin\Debug\net6.0\Nancy.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\kaspa\OneDrive\Desktop\ShopTARge22\ShopTARge22\RealEstateTest\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

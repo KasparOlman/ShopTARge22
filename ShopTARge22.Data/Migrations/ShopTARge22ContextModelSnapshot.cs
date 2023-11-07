@@ -78,6 +78,9 @@ namespace ShopTARge22.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("KidnergartenName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("KindergartenName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

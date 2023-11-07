@@ -8,6 +8,17 @@ namespace ShopTARge22.Core.Domain
 {
     public class Kindergarten
     {
+        private int v;
+
+        public Kindergarten()
+        {
+        }
+
+        public Kindergarten(int v)
+        {
+            this.v = v;
+        }
+
         public Guid? Id { get; set; }
         public string GroupName { get; set; }
         public int ChildrenCount { get; set; }
@@ -16,5 +27,6 @@ namespace ShopTARge22.Core.Domain
 
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        public string? KidnergartenName { get; set; }
     }
 }

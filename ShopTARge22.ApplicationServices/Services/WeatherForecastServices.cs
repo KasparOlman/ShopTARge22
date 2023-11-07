@@ -1,9 +1,7 @@
 ﻿using Nancy.Json;
-using Newtonsoft.Json;
 using ShopTARge22.Core.Dto.WeatherDtos;
 using ShopTARge22.Core.ServiceInterface;
 using System.Net;
-using static ShopTARge22.Core.Dto.WeatherDtos.WeatherResponceRootDto;
 
 namespace ShopTARge22.ApplicationServices.Services
 {
@@ -19,10 +17,19 @@ namespace ShopTARge22.ApplicationServices.Services
                 string json = client.DownloadString(url);
                 idOpenWeather = json;
 
-                WeatherResponceRootDto weatherResult = new JavaScriptSerializer().Deserialize<WeatherResponceRootDto>(json);
+                WeatherResponseRootDto weatherResult = new JavaScriptSerializer().Deserialize<WeatherResponseRootDto>(json);
+
+                dto.City = weatherResult.Name;
+                dto.Temp = weatherResult.Main.Temp;
+                dto.FeelsLike = weatherResult.Main.Feels_like;
+                dto.Humitity = weatherResult.Main.Humidity;
+                dto.Pressure = weatherResult.Main.Pressure;
+                dto.WindSpeed = weatherResult.Wind.Speed;
+                dto.Description = weatherResult.Weather[0].Description;
             }
 
-                return null;
+
+            return null;
         }
     }
 }

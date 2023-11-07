@@ -8,8 +8,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ShopTARge22.Core.Dto.WeatherDtos
-{
-    public class WeatherResponceRootDto
+
     {
         public class WeatherResponseRootDto
         {
@@ -151,4 +150,4 @@ namespace ShopTARge22.Core.Dto.WeatherDtos
     }
 
 
-}
+
